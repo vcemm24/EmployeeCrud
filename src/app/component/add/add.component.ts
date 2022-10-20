@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { MyserviceService } from 'src/app/service/myservice.service';
 import { employee } from '../view/employemodel';
 
 interface gender{
@@ -27,9 +29,21 @@ export class AddComponent implements OnInit {
     {value:'male',viewvalue:'male'},
     {value:'female',viewvalue:'female'},
   ]
-  constructor() { }
+  constructor(private employeservice:MyserviceService,private router:Router) { }
 
   ngOnInit(): void {
+  }
+  add(){
+    this.employeservice.createuser(this.empy).subscribe((data:employee)=>{
+      console.log(data)
+      alert("data added successfuly")
+      this.router.navigate(['/view'])
+    },
+    err=>{
+      alert("something went wrong")
+      this.router.navigate(['/'])
+    }
+    )
   }
 
 }

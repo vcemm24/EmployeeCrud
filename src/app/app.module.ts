@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddComponent } from './component/add/add.component';
 import { ViewComponent } from './component/view/view.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
