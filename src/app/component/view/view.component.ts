@@ -17,8 +17,14 @@ export class ViewComponent implements OnInit {
   getmyuser(){
     this.employeservice.getuser().subscribe(res=>{
       this.myemployee=res;
-      console.log(res);
+      //console.log(res);
     })
+  }
+  deleteuser(user:any){
+    if(confirm('Are you sure to delete?'))
+      this.employeservice.delete(user).subscribe(()=>{
+        this.getmyuser();
+      })
   }
 
 }

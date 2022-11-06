@@ -10,12 +10,14 @@ import { AddComponent } from './component/add/add.component';
 import { ViewComponent } from './component/view/view.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { EditComponent } from './component/edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddComponent,
-    ViewComponent
+    ViewComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

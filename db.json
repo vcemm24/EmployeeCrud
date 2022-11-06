@@ -8,28 +8,22 @@
       "address": "kin",
       "salary": 5000,
       "gender": "male",
-      "position": "React developer",
+      "position": "Angular developer",
       "id": 2
     },
     {
-      "eid": 4477,
-      "name": "meso",
-      "mobile": 84,
-      "email": "vcen1@vcen.com",
-      "address": "matadi",
-      "salary": 4000,
-      "gender": "female",
+      "eid": 4488,
+      "name": "vcemm",
+      "mobile": 85,
+      "email": "test2@test2.com",
+      "address": "plazzq",
+      "salary": 7000,
+      "gender": "male",
       "position": "Java developer",
       "id": 3
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }
